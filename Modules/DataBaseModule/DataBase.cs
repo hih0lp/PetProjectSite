@@ -13,7 +13,7 @@ namespace PetProjectC_NeuroWeb.Modules.DataBaseModule
         public DbSet<User> Users { get; set; }
         protected override OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql();
+            optionsBuilder.UseMySql();//положить путь к базе данных 
         }
 
     }
