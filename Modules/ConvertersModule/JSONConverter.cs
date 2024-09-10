@@ -2,7 +2,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace PetProjectC_NeuroWeb.Modules.Converters
+namespace PetProjectC_NeuroWeb.Modules.ConvertersModule
 {
     public class CustomJSONConverter : JsonConverter<UserData>
     {
@@ -10,8 +10,7 @@ namespace PetProjectC_NeuroWeb.Modules.Converters
         public override UserData? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
             var login = "Undefined";
-            var hashedPassword = "Undefined";
-            var salt = "Unknown";
+            var password = "Undefined";
 
             while (reader.Read())
             {
@@ -26,18 +25,16 @@ namespace PetProjectC_NeuroWeb.Modules.Converters
                             login = reader.GetString();
                             break;
 
-                        case "hashedPassword":
-                            hashedPassword = reader.GetString();
+                        case "password":
+                            password = reader.GetString();
                             break;
 
-                        case "salt":
-                            salt = reader.GetString();
-                            break;
                     }
 
                 }
             }
-            return new UserData(login, salt, hashedPassword);
+            if(login == null || password == null) return null;
+            return new UserData(login, salt, password);
 
 
         }
@@ -46,7 +43,6 @@ namespace PetProjectC_NeuroWeb.Modules.Converters
         {
             writer.WriteStartObject();
             writer.WriteString("login", userData.Login);
-            writer.WriteString("salt", userData.Salt);
             writer.WriteEndObject();
         }
 
