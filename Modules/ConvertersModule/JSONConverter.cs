@@ -4,10 +4,10 @@ using System.Text.Json.Serialization;
 
 namespace PetProjectC_NeuroWeb.Modules.ConvertersModule
 {
-    public class CustomJSONConverter : JsonConverter<UserData>
+    public class CustomJSONConverter : JsonConverter<RegisterUserDTO>
     {
 
-        public override UserData? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        public override RegisterUserDTO? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
             var login = "Undefined";
             var password = "Undefined";
@@ -34,17 +34,12 @@ namespace PetProjectC_NeuroWeb.Modules.ConvertersModule
                 }
             }
             if(login == null || password == null) return null;
-            return new UserData(login, salt, password);
+            return new RegisterUserDTO(login, password);
 
 
         }
 
-        public override void Write(Utf8JsonWriter writer, UserData userData, JsonSerializerOptions options)
-        {
-            writer.WriteStartObject();
-            writer.WriteString("login", userData.Login);
-            writer.WriteEndObject();
-        }
+        public override void Write(Utf8JsonWriter writer, RegisterUserDTO userData, JsonSerializerOptions options){}
 
     }
 }
