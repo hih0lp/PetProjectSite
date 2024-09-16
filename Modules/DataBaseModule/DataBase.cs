@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PetProjectC_NeuroWeb.Modules.UserModule;
+
 namespace PetProjectC_NeuroWeb.Modules.DataBaseModule
 {
     public class UserDataBase : DbContext

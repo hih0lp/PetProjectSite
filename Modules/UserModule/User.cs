@@ -18,35 +18,19 @@ namespace PetProjectC_NeuroWeb.Modules.UserModule
 
         public User(string login, string salt, string hashedPassword)
         {
-            _userdata = new UserData(login, salt, hashedPassword);
+            _login = login;
+            _salt = salt;
+            _hashedPassword = hashedPassword;
         }
 
-        public User(UserData userData)
-        {
-            _userdata.Login = userData.Login;
-            _userdata.Salt = userData.Salt;
-            _userdata.hashedPassword = userData.hashedPassword;
-        }
+        private string _login;
+        private string _salt;
+        private string _hashedPassword;
 
-        private UserData _userdata = null!;
+        
 
 
 
-        public UserData UserData
-        {
-            get => _userdata;
-            set => _userdata = value;
-        }
-
-        public int UserDataId { get; set; }
-
-        //public async Task Save()
-        //{
-        //    using (var dataBase = new DataBaseModule())
-        //    {
-
-        //    }
-        //}
 
         
 
