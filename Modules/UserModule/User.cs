@@ -16,7 +16,7 @@ namespace PetProjectC_NeuroWeb.Modules.UserModule
 
         }
 
-        public User(string login, string salt, string hashedPassword)
+        public User(string login, string hashedPassword, string salt)
         {
             _login = login;
             _salt = salt;

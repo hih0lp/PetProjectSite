@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿//lets celebrate and suck some dick
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using PetProjectC_NeuroWeb.Modules.UserModule;
 
 namespace PetProjectC_NeuroWeb.Modules.DataBaseModule
@@ -12,9 +14,10 @@ namespace PetProjectC_NeuroWeb.Modules.DataBaseModule
         }
 
         public DbSet<User> Users { get; set; }
-        protected override OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql();//положить путь к базе данных 
+            //optionsBuilder.UseMySql("server=localhost;user=root;password=aternosru123;database=NeuroWebSiteDB");//положить путь к базе данных 
+            optionsBuilder.UseMySql("server=localhost;user=root;password=aternosru123;database=NeuroWebSiteDB", new MySqlServerVersion(new Version()));
         }
 
     }

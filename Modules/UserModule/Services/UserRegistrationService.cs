@@ -1,4 +1,4 @@
-﻿namespace PetProjectC_NeuroWeb.Modules.UserModule
+﻿namespace PetProjectC_NeuroWeb.Modules.UserModule.Services
 {
     public interface IUserRegistrationService
     {
