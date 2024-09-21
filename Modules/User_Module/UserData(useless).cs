@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration.UserSecrets;
 using Microsoft.Extensions.Primitives;
 
-namespace PetProjectC_NeuroWeb.Modules.UserModule
+namespace PetProjectC_NeuroWeb.Modules.UserModule.UserModule
 {
     public class UserData
     {

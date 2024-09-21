@@ -1,9 +1,8 @@
 ﻿//lets celebrate and suck some dick
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using PetProjectC_NeuroWeb.Modules.UserModule;
-
-namespace PetProjectC_NeuroWeb.Modules.DataBaseModule
+using PetProjectC_NeuroWeb.Modules.UserModule.UserModule.Core;
+namespace PetProjectC_NeuroWeb
 {
     public class UserDataBase : DbContext
     {

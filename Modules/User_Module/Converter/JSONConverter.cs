@@ -1,13 +1,13 @@
-﻿using PetProjectC_NeuroWeb.Modules.UserModule.DataTransferObject;
+﻿using PetProjectC_NeuroWeb.Modules.UserModule.UserModule.DataTransferObject;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace PetProjectC_NeuroWeb.Modules.UserModule.ConvertersModule
+namespace PetProjectC_NeuroWeb.Modules.UserModule.UserModule.ConvertersModule
 {
-    public class UserJSONConverter : JsonConverter<RegisterUserDTO>
+    public class UserJSONConverter : JsonConverter<UserDTO>
     {
 
-        public override RegisterUserDTO? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        public override UserDTO? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
             var login = "Undefined";
             var password = "Undefined";
@@ -34,12 +34,12 @@ namespace PetProjectC_NeuroWeb.Modules.UserModule.ConvertersModule
                 }
             }
             if (login == null || password == null) return null;
-            return new RegisterUserDTO(login, password);
+            return new UserDTO(login, password);
 
 
         }
 
-        public override void Write(Utf8JsonWriter writer, RegisterUserDTO userData, JsonSerializerOptions options) { }
+        public override void Write(Utf8JsonWriter writer, UserDTO userData, JsonSerializerOptions options) { }
 
     }
 }
