@@ -21,7 +21,7 @@ namespace PetProjectC_NeuroWeb.Modules.RegistrationModule.Services
 
     public class UserRegistrationService : IUserRegistrationService
     {
-        public async Task UserRegistration(HttpContext context, HashSHA512 hashService)
+        public async Task UserRegistrationAsync(HttpContext context, IHashService hashService)
         {
             JsonSerializerOptions options = new JsonSerializerOptions();
             options.Converters.Add(new UserJSONConverter());
@@ -40,7 +40,20 @@ namespace PetProjectC_NeuroWeb.Modules.RegistrationModule.Services
 
                     using (var db = new UserDataBase())
                     {
-                        db.Users.Add(user);
+                        var users = db.Users.ToList();
+                        var isUserEmpty = users.FirstOrDefault(u => u.Login == userDTO.login);
+
+                        if (isUserEmpty != null)
+                        {
+                            context.Response.StatusCode = 401;
+                        }
+
+                        else
+                        {
+                            db.Users.Add(user);
+                            db.SaveChanges();
+                        }
+                        
                     }
                 }
             }

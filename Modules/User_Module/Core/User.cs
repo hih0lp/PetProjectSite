@@ -25,6 +25,27 @@ namespace PetProjectC_NeuroWeb.Modules.UserModule.UserModule.Core
         private string _hashedPassword;
         private string _id;
 
+        public string Login
+        {
+            get { return _login; }
+            set { _login = value; }
+        }
+
+        public string HashedPassword
+        { 
+            get { return _hashedPassword; }
+            set { _hashedPassword = value; } 
+        }
+
+        public string Salt
+        {
+            get { return _salt; }
+            set { _salt = value; }
+        }
+
+
+
+
 
 
 
