@@ -13,10 +13,6 @@ public static class ModuleExtensions
 
     public static IServiceCollection RegisterModules(this IServiceCollection services)
     {
-
-
-
-
         return services;
     }
 

@@ -10,6 +10,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text.Json;
 using System.IdentityModel.Tokens.Jwt;
 using System.Runtime.CompilerServices;
+using System.Reflection.Metadata.Ecma335;
 
 namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
 {
@@ -22,12 +23,11 @@ namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
 
             if (context.Request.HasJsonContentType())
             {
+                
                 var userDTO = await context.Request.ReadFromJsonAsync<UserDTO>(options);
 
                 if(userDTO != null)
                 {
-                    
-
                     using (var db = new UserDataBase())
                     {
                         var users = db.Users.ToList();
@@ -39,16 +39,12 @@ namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
 
                             if(checkingUser.HashedPassword == checkingHashPassword.ToString())
                             {
-                               
+                                TokenGeneratorService.GenerateToken(userDTO);
                             }
                         }
-                        
-                        
                     }
-                }
-                
-
-            }
+                }     
+            }            
         }
 
 

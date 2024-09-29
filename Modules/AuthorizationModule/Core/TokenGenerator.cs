@@ -1,26 +1,22 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.IdentityModel.Tokens.Jwt;
-using PetProjectC_NeuroWeb;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authentication.OAuth;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using PetProjectC_NeuroWeb.Modules.UserModule.UserModule.DataTransferObject;
+using System.Security.Cryptography.X509Certificates;
 
 
-namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule
+namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
 {
-    public static class TokenGenerator
+    public static class TokenGeneratorService
     {
 
-        public static string GenerateToken(this WebApplicationBuilder builder, UserDTO userDTO)
+        public static AuthOptions tokenOptions { get; set; } = null!;
+
+        public static string GenerateToken(UserDTO userDTO)
         {
-            var tokenOptions = new AuthOptions
-            {
-                Issuer = builder.Configuration["Authentication:Issuer"],
-                Audience = builder.Configuration["Authentication:Audience"],
-                Key = builder.Configuration["Authentication:Key"]
-            };
 
             var claims = new List<Claim> { new Claim(ClaimTypes.Name, userDTO.login!) };
 
@@ -34,5 +30,10 @@ namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule
 
             return new JwtSecurityTokenHandler().WriteToken(JWT);
         }
+
+
+
+
+
     }
 }

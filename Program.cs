@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authentication.OAuth;
 using Microsoft.IdentityModel.Tokens;
 using PetProjectC_NeuroWeb;
+using PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core;
 using PetProjectC_NeuroWeb.Modules.UserModule.UserModule;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -32,6 +33,13 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateIssuerSigningKey = true
         };
     });
+
+
+TokenGeneratorService.tokenOptions = tokenOptions; 
+
+
+
+
 
 
 var app = builder.Build();
