@@ -1,9 +1,15 @@
 ﻿using PetProjectC_NeuroWeb.Modules.HashModule.Ports;
 using PetProjectC_NeuroWeb.Modules.UserModule.UserModule.ConvertersModule;
 using PetProjectC_NeuroWeb.Modules.UserModule.UserModule.DataTransferObject;
+using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authentication.OAuth;
+using Microsoft.IdentityModel.Tokens;
 using System.Text.Json;
+using System.IdentityModel.Tokens.Jwt;
+using System.Runtime.CompilerServices;
 
 namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
 {
@@ -33,7 +39,7 @@ namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
 
                             if(checkingUser.HashedPassword == checkingHashPassword.ToString())
                             {
-                                ///отправить jwt
+                               
                             }
                         }
                         
@@ -65,6 +71,6 @@ namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
 
     }
 
-
+    
 
 }

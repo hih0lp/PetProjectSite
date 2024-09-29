@@ -18,7 +18,6 @@ var tokenOptions = new AuthOptions
     Key = builder.Configuration["Authentication:Key"]
 };
 
-
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
