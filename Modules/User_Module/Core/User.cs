@@ -24,6 +24,8 @@ namespace PetProjectC_NeuroWeb.Modules.UserModule.UserModule.Core
         private string _salt;
         private string _hashedPassword;
         private string _id;
+        private string refreshToken = string.Empty;
+        private string accessToken = string.Empty;
 
         public string Login
         {
@@ -43,7 +45,22 @@ namespace PetProjectC_NeuroWeb.Modules.UserModule.UserModule.Core
             set { _salt = value; }
         }
 
+        public string Id
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
+        public string RefreshToken
+        {
+            get { return refreshToken; }
+            set { refreshToken = value; }
+        }
 
+        public string AccessToken
+        {
+            get { return accessToken; }
+            set { accessToken = value; }
+        }
 
 
 

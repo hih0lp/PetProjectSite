@@ -14,7 +14,7 @@ using System.Reflection.Metadata.Ecma335;
 
 namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
 {
-    public class UserAuthorization
+    public class UserAuthorizationService
     {
         public async Task UserAuthorizationAsync(HttpContext context, IHashService hashService)
         {
@@ -39,7 +39,14 @@ namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
 
                             if(checkingUser.HashedPassword == checkingHashPassword.ToString())
                             {
-                                TokenGeneratorService.GenerateToken(userDTO);
+                                var accessTokenClaims = new List<Claim> {new Claim("userId", checkingUser.Id.ToString())};
+                                var refreshTokenClaims = new List<Claim> {new Claim("userId", checkingUser.Id.ToString())};
+
+
+
+
+                                //JWTTokenGenerator.GenerateToken(userDTO,);
+                                
                             }
                         }
                     }
