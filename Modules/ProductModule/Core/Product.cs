@@ -1,0 +1,16 @@
+﻿namespace PetProjectC_NeuroWeb.Modules.ProductModule.Core
+{
+    public class Product
+    {
+        public Product(string id, List<string> image, string description)
+        {
+            _id = id;
+            _image = image;
+            _description = description;
+        }
+
+        private string _id;
+        private List<string> _image;
+        private string _description;
+    }
+}
