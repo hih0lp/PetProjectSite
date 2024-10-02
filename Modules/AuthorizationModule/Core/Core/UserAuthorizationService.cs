@@ -11,22 +11,23 @@ using System.Text.Json;
 using System.IdentityModel.Tokens.Jwt;
 using System.Runtime.CompilerServices;
 using System.Reflection.Metadata.Ecma335;
+using PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core.DTO;
 
-namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
+namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core.Core
 {
     public class UserAuthorizationService
     {
-        public async Task UserAuthorizationAsync(HttpContext context, IHashService hashService)
+        public async Task<TokenDTO> UserAuthorizationAsync(HttpContext context, IHashService hashService)
         {
             JsonSerializerOptions options = new JsonSerializerOptions();
             options.Converters.Add(new UserJSONConverter());
 
             if (context.Request.HasJsonContentType())
             {
-                
+
                 var userDTO = await context.Request.ReadFromJsonAsync<UserDTO>(options);
 
-                if(userDTO != null)
+                if (userDTO != null)
                 {
                     using (var db = new UserDataBase())
                     {
@@ -37,21 +38,23 @@ namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
                         {
                             var checkingHashPassword = hashService.GenerateHashedPassword(userDTO.password, Encoding.UTF8.GetBytes(checkingUser.Salt));
 
-                            if(checkingUser.HashedPassword == checkingHashPassword.ToString())
+                            if (checkingUser.HashedPassword == checkingHashPassword.ToString())
                             {
-                                var accessTokenClaims = new List<Claim> {new Claim("userId", checkingUser.Id.ToString())};
-                                var refreshTokenClaims = new List<Claim> {new Claim("userId", checkingUser.Id.ToString())};
+                                var accessTokenClaims = new List<Claim> { new Claim("userId", checkingUser.Id.ToString()) };
 
+                                var accessToken = TokenOperations.GetAccessToken(accessTokenClaims);
+                                var refreshToken = TokenOperations.GetRefreshToken();
 
-
+                                return new TokenDTO(accessToken, refreshToken);
 
                                 //JWTTokenGenerator.GenerateToken(userDTO,);
-                                
+
                             }
                         }
                     }
-                }     
-            }            
+                }
+            }
+            return null;
         }
 
 
@@ -74,6 +77,6 @@ namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
 
     }
 
-    
+
 
 }

@@ -1,4 +1,4 @@
-﻿using PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core;
+﻿using PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core.Core;
 
 namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule
 {
@@ -7,6 +7,7 @@ namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule
         public IServiceCollection RegisterService(IServiceCollection services)
         {
             services.AddTransient<UserAuthorizationService>();
+            //services.AddTransient<TokenService>();
             return services;
         }
 

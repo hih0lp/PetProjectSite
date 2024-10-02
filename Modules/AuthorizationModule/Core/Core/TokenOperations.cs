@@ -1,17 +1,14 @@
 ﻿using Microsoft.IdentityModel.Tokens;
+using PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core.DTO;
 using PetProjectC_NeuroWeb.Modules.UserModule.UserModule.DataTransferObject;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 
-namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
+namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core.Core
 {
-    public class TokenService
+    public class TokenOperations
     {
-        public TokenService()
-        {
-
-        }
         public static AuthOptions tokenOptions { get; set; } = null!;
 
         public static string GetAccessToken(List<Claim> claims)
@@ -30,13 +27,13 @@ namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
         }
 
 
-        public bool CheckAccessToken(string token)
+        private static bool CheckAccessToken(string token)
         {
             var decodedToken = DecodeToken(token);
-            return true; 
+            return true;
         }
 
-        public string GetRefreshToken()
+        public static string GetRefreshToken()
         {
             var rndmNumber = new byte[32];
             var rng = RandomNumberGenerator.Create();
@@ -44,13 +41,13 @@ namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
             return Convert.ToHexString(rndmNumber);
         }
 
-        public Dictionary<string, string> DecodeToken(string token)
+        private static Dictionary<string, string> DecodeToken(string token)
         {
             var jwtToken = new JwtSecurityTokenHandler().ReadJwtToken(token);
             return jwtToken.Claims.ToDictionary(claim => claim.Type, claim => claim.Value);
         }
 
-        public async Task<TokenDTO> RefreshToken(string refreshToken, string accessToken)
+        public static async Task<TokenDTO> RefreshToken(string refreshToken, string accessToken)
         {
             var decodedAccessToken = DecodeToken(accessToken);
             var decodedRefreshToken = DecodeToken(refreshToken);
@@ -58,7 +55,7 @@ namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
             var refreshTokenClaims = new List<Claim>();
             var accessTokenClaims = new List<Claim>();
 
-            foreach(var claim in decodedAccessToken)
+            foreach (var claim in decodedAccessToken)
             {
                 accessTokenClaims.Add(new Claim(claim.Key, claim.Value));
             }
@@ -80,7 +77,7 @@ namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
 
                     return new TokenDTO(user.RefreshToken, user.AccessToken);
                 }
-                
+
 
             }
             return null;

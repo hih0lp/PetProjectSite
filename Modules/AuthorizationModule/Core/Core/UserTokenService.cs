@@ -2,7 +2,7 @@
 using PetProjectC_NeuroWeb.Modules.UserModule.UserModule.DataTransferObject;
 
 
-namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
+namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core.Core
 {
     public class UserTokenService
     {
