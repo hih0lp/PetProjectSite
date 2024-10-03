@@ -2,7 +2,7 @@
 
 namespace PetProjectC_NeuroWeb.Modules.ProductModule.Core
 {
-    public class ProductOperations
+    public class ProductOperationsService
     {
         public async Task AddProductToCatalog(HttpContext context)
         {
@@ -32,9 +32,26 @@ namespace PetProjectC_NeuroWeb.Modules.ProductModule.Core
                 {
                     var products = db.Products.ToList();
                     Product product = new Product(productId, listImages, descriptionImage);
+                    products.Add(product);
+                    db.SaveChanges();
                 }
+            }            
+        }
+
+        public async Task<Product> GetProductById(string productId)
+        {
+            using (var db = new ProductDataBase())
+            {
+                var products = db.Products.ToList();
+                var findingProduct = products.FirstOrDefault(u => u.Id == productId);
+
+                if (findingProduct != null)
+                {
+                    return findingProduct;
+                }
+                return null;
+
             }
-            
         }
     }
 }

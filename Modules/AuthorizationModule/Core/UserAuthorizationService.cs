@@ -11,7 +11,7 @@ using System.Text.Json;
 using System.IdentityModel.Tokens.Jwt;
 using System.Runtime.CompilerServices;
 using System.Reflection.Metadata.Ecma335;
-using PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core.DTO;
+using PetProjectC_NeuroWeb.Modules.AuthorizationModule.DTO;
 
 namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core.Core
 {

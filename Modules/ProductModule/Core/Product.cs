@@ -12,5 +12,12 @@
         private string _id;
         private List<string> _image;
         private string _description;
+
+        public string Id
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
+
     }
 }

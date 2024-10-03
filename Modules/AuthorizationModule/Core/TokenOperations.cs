@@ -1,5 +1,5 @@
 ﻿using Microsoft.IdentityModel.Tokens;
-using PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core.DTO;
+using PetProjectC_NeuroWeb.Modules.AuthorizationModule.DTO;
 using PetProjectC_NeuroWeb.Modules.UserModule.UserModule.DataTransferObject;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;

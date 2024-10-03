@@ -17,7 +17,7 @@ namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core.Core
                 {
                     return user;
                 }
-                throw new Exception();
+                return null;
             }
         }
     }

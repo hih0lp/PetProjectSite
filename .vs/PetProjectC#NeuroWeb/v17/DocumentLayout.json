@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|c:\\users\\user\\source\\repos\\petprojectc#neuroweb\\modules\\productmodule\\productmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|solutionrelative:modules\\productmodule\\productmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|c:\\users\\user\\source\\repos\\petprojectc#neuroweb\\modules\\productmodule\\core\\productoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|solutionrelative:modules\\productmodule\\core\\productoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|c:\\users\\user\\source\\repos\\petprojectc#neuroweb\\modules\\authorizationmodule\\core\\usertokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|solutionrelative:modules\\authorizationmodule\\core\\usertokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|c:\\users\\user\\source\\repos\\petprojectc#neuroweb\\modules\\authorizationmodule\\core\\userauthorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|solutionrelative:modules\\authorizationmodule\\core\\userauthorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|c:\\users\\user\\source\\repos\\petprojectc#neuroweb\\modules\\authorizationmodule\\core\\tokenoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|solutionrelative:modules\\authorizationmodule\\core\\tokenoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|c:\\users\\user\\source\\repos\\petprojectc#neuroweb\\modules\\authorizationmodule\\core\\tokenslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|solutionrelative:modules\\authorizationmodule\\core\\tokenslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|c:\\users\\user\\source\\repos\\petprojectc#neuroweb\\modules\\authorizationmodule\\authorizationmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|solutionrelative:modules\\authorizationmodule\\authorizationmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|c:\\users\\user\\source\\repos\\petprojectc#neuroweb\\modules\\productmodule\\core\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,28 +39,12 @@
       "RelativeMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|solutionrelative:productdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|c:\\users\\user\\source\\repos\\petprojectc#neuroweb\\modules\\authorizationmodule\\core\\core\\userauthorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|solutionrelative:modules\\authorizationmodule\\core\\core\\userauthorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|c:\\users\\user\\source\\repos\\petprojectc#neuroweb\\modules\\authorizationmodule\\core\\core\\tokenoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|solutionrelative:modules\\authorizationmodule\\core\\core\\tokenoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|c:\\users\\user\\source\\repos\\petprojectc#neuroweb\\modules\\authorizationmodule\\authorizationmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|solutionrelative:modules\\authorizationmodule\\authorizationmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|c:\\users\\user\\source\\repos\\petprojectc#neuroweb\\modules\\authorizationmodule\\core\\tokenslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|solutionrelative:modules\\authorizationmodule\\core\\tokenslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|c:\\users\\user\\source\\repos\\petprojectc#neuroweb\\modules\\tokenmodule\\tokenmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|solutionrelative:modules\\tokenmodule\\tokenmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|c:\\users\\user\\source\\repos\\petprojectc#neuroweb\\modules\\authorizationmodule\\core\\dto\\tokensdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|solutionrelative:modules\\authorizationmodule\\core\\dto\\tokensdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|c:\\users\\user\\source\\repos\\petprojectc#neuroweb\\modules\\authorizationmodule\\dto\\tokensdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{085C9EC6-3318-456F-8035-0EBF390B8164}|PetProjectC#NeuroWeb.csproj|solutionrelative:modules\\authorizationmodule\\dto\\tokensdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,19 +63,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProductModule.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\ProductModule\\ProductModule.cs",
+              "RelativeDocumentMoniker": "Modules\\ProductModule\\ProductModule.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\ProductModule\\ProductModule.cs",
+              "RelativeToolTip": "Modules\\ProductModule\\ProductModule.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T11:47:15.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserTokenService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\AuthorizationModule\\Core\\UserTokenService.cs",
+              "RelativeDocumentMoniker": "Modules\\AuthorizationModule\\Core\\UserTokenService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\AuthorizationModule\\Core\\UserTokenService.cs",
+              "RelativeToolTip": "Modules\\AuthorizationModule\\Core\\UserTokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T11:42:29.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ProductOperations.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\ProductModule\\Core\\ProductOperations.cs",
               "RelativeDocumentMoniker": "Modules\\ProductModule\\Core\\ProductOperations.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\ProductModule\\Core\\ProductOperations.cs",
               "RelativeToolTip": "Modules\\ProductModule\\Core\\ProductOperations.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwA8AAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T15:23:25.772Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "ProductDataBase.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\ProductDataBase.cs",
               "RelativeDocumentMoniker": "ProductDataBase.cs",
@@ -75,25 +108,23 @@
               "RelativeToolTip": "ProductDataBase.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T14:49:57.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-02T14:49:57.634Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\ProductModule\\Core\\Product.cs",
               "RelativeDocumentMoniker": "Modules\\ProductModule\\Core\\Product.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\ProductModule\\Core\\Product.cs",
               "RelativeToolTip": "Modules\\ProductModule\\Core\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T14:38:54.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-02T14:38:54.417Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "TokensList.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\AuthorizationModule\\Core\\TokensList.cs",
               "RelativeDocumentMoniker": "Modules\\AuthorizationModule\\Core\\TokensList.cs",
@@ -105,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "TokenModule.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\TokenModule\\TokenModule.cs",
               "RelativeDocumentMoniker": "Modules\\TokenModule\\TokenModule.cs",
@@ -117,19 +148,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "TokensDTO.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\AuthorizationModule\\Core\\DTO\\TokensDTO.cs",
-              "RelativeDocumentMoniker": "Modules\\AuthorizationModule\\Core\\DTO\\TokensDTO.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\AuthorizationModule\\Core\\DTO\\TokensDTO.cs",
-              "RelativeToolTip": "Modules\\AuthorizationModule\\Core\\DTO\\TokensDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\AuthorizationModule\\DTO\\TokensDTO.cs",
+              "RelativeDocumentMoniker": "Modules\\AuthorizationModule\\DTO\\TokensDTO.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\AuthorizationModule\\DTO\\TokensDTO.cs",
+              "RelativeToolTip": "Modules\\AuthorizationModule\\DTO\\TokensDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T13:56:28.433Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AuthorizationModule.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\AuthorizationModule\\AuthorizationModule.cs",
               "RelativeDocumentMoniker": "Modules\\AuthorizationModule\\AuthorizationModule.cs",
@@ -143,11 +174,11 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "TokenOperations.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\AuthorizationModule\\Core\\Core\\TokenOperations.cs",
-              "RelativeDocumentMoniker": "Modules\\AuthorizationModule\\Core\\Core\\TokenOperations.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\AuthorizationModule\\Core\\Core\\TokenOperations.cs",
-              "RelativeToolTip": "Modules\\AuthorizationModule\\Core\\Core\\TokenOperations.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAYwDEAAAAWAAAA",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\AuthorizationModule\\Core\\TokenOperations.cs",
+              "RelativeDocumentMoniker": "Modules\\AuthorizationModule\\Core\\TokenOperations.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\AuthorizationModule\\Core\\TokenOperations.cs",
+              "RelativeToolTip": "Modules\\AuthorizationModule\\Core\\TokenOperations.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAYwDEAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T13:35:07.452Z"
             },
@@ -155,10 +186,10 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "UserAuthorizationService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\AuthorizationModule\\Core\\Core\\UserAuthorizationService.cs",
-              "RelativeDocumentMoniker": "Modules\\AuthorizationModule\\Core\\Core\\UserAuthorizationService.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\AuthorizationModule\\Core\\Core\\UserAuthorizationService.cs",
-              "RelativeToolTip": "Modules\\AuthorizationModule\\Core\\Core\\UserAuthorizationService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\AuthorizationModule\\Core\\UserAuthorizationService.cs",
+              "RelativeDocumentMoniker": "Modules\\AuthorizationModule\\Core\\UserAuthorizationService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\PetProjectC#NeuroWeb\\Modules\\AuthorizationModule\\Core\\UserAuthorizationService.cs",
+              "RelativeToolTip": "Modules\\AuthorizationModule\\Core\\UserAuthorizationService.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAQwCgAAABfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T13:33:15.8Z"
