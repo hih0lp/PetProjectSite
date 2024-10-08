@@ -35,7 +35,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 
-JWTTokenGenerator.tokenOptions = tokenOptions;
+TokenOperations.tokenOptions = tokenOptions;
 builder.Services.RegisterModules();
 
 

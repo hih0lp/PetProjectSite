@@ -1,11 +1,12 @@
 ﻿using Microsoft.IdentityModel.Tokens;
+using PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core.Core;
 using PetProjectC_NeuroWeb.Modules.AuthorizationModule.DTO;
 using PetProjectC_NeuroWeb.Modules.UserModule.UserModule.DataTransferObject;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 
-namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core.Core
+namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core
 {
     public class TokenOperations
     {
@@ -41,7 +42,7 @@ namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core.Core
             return Convert.ToHexString(rndmNumber);
         }
 
-        private static Dictionary<string, string> DecodeToken(string token)
+        public static Dictionary<string, string> DecodeToken(string token)
         {
             var jwtToken = new JwtSecurityTokenHandler().ReadJwtToken(token);
             return jwtToken.Claims.ToDictionary(claim => claim.Type, claim => claim.Value);
@@ -69,7 +70,7 @@ namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core.Core
 
             if (user != null)
             {
-                using (var db = new UserDataBase())
+                using (var db = new DataBase())
                 {
                     user.RefreshToken = GetRefreshToken();
                     user.AccessToken = GetAccessToken(accessTokenClaims);

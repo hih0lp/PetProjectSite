@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Runtime.CompilerServices;
 
-namespace PetProjectC_NeuroWeb.Modules.UserModule.UserModule.Core
+namespace PetProjectC_NeuroWeb.Modules.UserModule.Core
 {
     public class User
     {
@@ -26,6 +26,7 @@ namespace PetProjectC_NeuroWeb.Modules.UserModule.UserModule.Core
         private string _id;
         private string refreshToken = string.Empty;
         private string accessToken = string.Empty;
+        private List<string> productsList = new List<string>();
 
         public string Login
         {
@@ -62,7 +63,11 @@ namespace PetProjectC_NeuroWeb.Modules.UserModule.UserModule.Core
             set { accessToken = value; }
         }
 
-
+        public List<string> ProductsList
+        {
+            get { return productsList; }
+            set { productsList = value; }
+        }
 
 
 

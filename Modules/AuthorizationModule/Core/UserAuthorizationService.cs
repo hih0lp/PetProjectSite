@@ -29,7 +29,7 @@ namespace PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core.Core
 
                 if (userDTO != null)
                 {
-                    using (var db = new UserDataBase())
+                    using (var db = new DataBase())
                     {
                         var users = db.Users.ToList();
                         var checkingUser = users.FirstOrDefault(u => u.Login == userDTO.login);

@@ -1,4 +1,6 @@
 ﻿using System.Runtime.Serialization.Formatters.Binary;
+using Microsoft.Extensions.Configuration.UserSecrets;
+using PetProjectC_NeuroWeb.Modules.AuthorizationModule.Core;
 
 namespace PetProjectC_NeuroWeb.Modules.ProductModule.Core
 {
@@ -28,7 +30,7 @@ namespace PetProjectC_NeuroWeb.Modules.ProductModule.Core
                     listImages.Add(Convert.ToString(image));
                 }
 
-                using(var db = new ProductDataBase())
+                using(var db = new DataBase())
                 {
                     var products = db.Products.ToList();
                     Product product = new Product(productId, listImages, descriptionImage);
@@ -40,17 +42,39 @@ namespace PetProjectC_NeuroWeb.Modules.ProductModule.Core
 
         public async Task<Product> GetProductById(string productId)
         {
-            using (var db = new ProductDataBase())
+            var db = new DataBase();
+            
+            var products = db.Products.ToList();
+            var findingProduct = products.FirstOrDefault(u => u.Id == productId);
+
+            if (findingProduct != null)
             {
-                var products = db.Products.ToList();
-                var findingProduct = products.FirstOrDefault(u => u.Id == productId);
+                return findingProduct;
+            }
+            return null;
 
-                if (findingProduct != null)
+            
+        }
+
+        public async Task AddProductToUserCart(string accessJWTToken, string productId)
+        {
+            var userClaims = TokenOperations.DecodeToken(accessJWTToken);
+            var userId = userClaims["userId"];
+
+            using (var db = new DataBase())
+            {
+                var users = db.Users.ToList();
+                var user = users.FirstOrDefault(u => u.Id == userId);
+
+                if (user != null)
                 {
-                    return findingProduct;
+                    user.ProductsList.Add(productId);
                 }
-                return null;
 
+                else
+                {
+                    //return an authorization/registration page
+                }
             }
         }
     }
